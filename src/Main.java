@@ -18,13 +18,16 @@ public class Main {
         String raceTime = scRaceTime.nextLine();
 
         switch(raceDistance){
-            case "800m", "1600m", "3200m":
+            case "800m", "1 Mile", "2 Mile":
                 System.out.println("Current Race");
                 System.out.println("Time: " + raceTime);
                 System.out.println("Distance: " + raceDistance);
                 break;
             case "5000m":
                 System.out.println("Hello");
+                break;
+            case "10000m":
+                System.out.println("What");
                 break;
         }
     }
