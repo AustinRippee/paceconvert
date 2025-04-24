@@ -38,13 +38,17 @@ public class Main {
         switch(raceDistance){
             case "800m":
                 score = 302.9089*(800/((60*dblTimeMin)+dblTimeSec)) - 1377.5673;
-
                 System.out.println("Current Race");
                 System.out.println("Time: " + raceTime);
                 System.out.println("Distance: " + raceDistance);
                 System.out.println("Score: " + score);
                 break;
             case "1 Mile":
+                score = 321.7731201*(1609.34/((60*dblTimeMin)+dblTimeSec)) -1306.285127;
+                System.out.println("Current Race");
+                System.out.println("Time: " + raceTime);
+                System.out.println("Distance: " + raceDistance);
+                System.out.println("Score: " + score);
                 break;
             case "2 Mile":
                 break;
