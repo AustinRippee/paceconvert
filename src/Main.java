@@ -23,6 +23,9 @@ public class Main {
                 System.out.println("Time: " + raceTime);
                 System.out.println("Distance: " + raceDistance);
                 break;
+            case "5000m":
+                System.out.println("Hello");
+                break;
         }
     }
 }
