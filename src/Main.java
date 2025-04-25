@@ -19,14 +19,16 @@ public class Main {
         double comp_m_s1 = 0.0;
         String comp_m_s_s = "";
         DecimalFormat df_obj = new DecimalFormat("#.##");
-
-        System.out.println("Hello to PaceConvert!");
-        System.out.println("====================================");
+        System.out.println("========================================");
+        System.out.println("\t\t\t\t******");
+        System.out.println("\t\t\t   PaceConv");
+        System.out.println("\t\tWritten by: Austin Rippee");
+        System.out.println("\t\t\t\t******");
+        System.out.println("========================================");
 
         scanMain = new Scanner(System.in);
 
         System.out.println("Enter your race distance:");
-        System.out.println("You can only choose from 800m, 1600m, or 3200m");
         raceDistance = scanMain.nextLine();
 
         System.out.println("Enter your race time:");
@@ -178,8 +180,6 @@ public class Main {
                 break;
             default:
                 System.out.println("That is not a valid race type.");
-                System.out.println("Choose from the list of available race types:");
-                System.out.println("110m, 200, 300m, 400m, 800m, 1500, 1 Mile, 3000m, 2 Mile, 5000m, 10000m");
                 break;
         }
 
@@ -202,6 +202,8 @@ public class Main {
                 System.out.println("=======================================================================");
                 break;
         }
-
+    }
+    static void raceOutput() {
+        //Put the output of race, time, and score here.
     }
 }
