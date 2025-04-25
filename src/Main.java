@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -7,9 +6,9 @@ public class Main {
         double score;
         double dblTimeMin = 0.0;
         double dblTimeSec = 0.0;
-        String[] totalTime = {};
+        String[] totalTime;
         String timeMin = "";
-        String timeSec = "";
+        String timeSec;
 
         System.out.println("Hello to PaceConvert!");
         System.out.println("====================================");
