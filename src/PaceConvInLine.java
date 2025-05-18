@@ -1,7 +1,7 @@
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
-public class PaceConvert {
+public class PaceConvInLine {
     public static void main(String[] args) {
 
         DecimalFormat df_obj = new DecimalFormat("#.##");
@@ -111,7 +111,7 @@ public class PaceConvert {
                 resultScore = 321.7731201 * (1600 / dblTotalTime) - 1306.285127;
                 printInfo(strInputRaceTime, strInputRaceDistance, resultScore);
                 break;
-            case "1 Mile", "1Mile", "Mile", "One Mile", "1609", "1609m":
+            case "1 Mile", "1Mile", "Mile", "One Mile", "1609", "1609m", "1 mile", "1mile", "1mi", "mile", "one mile", "One mile", "one Mile":
                 resultScore = 321.7731201 * (1609.34 / dblTotalTime) - 1306.285127;
                 printInfo(strInputRaceTime, strInputRaceDistance, resultScore);
                 break;
@@ -185,7 +185,6 @@ public class PaceConvert {
                 break;
         }
 
-
         scanMain.close();
     }
 
@@ -197,16 +196,16 @@ public class PaceConvert {
 
     static void raceOutput(String inputRaceDistance, String strInputRaceTime, String convertRace, int comp_m_int, String comp_m_s_s) {
         System.out.println("=======================================================================");
-        System.out.println();
-        System.out.println("Converted Time from " + inputRaceDistance + " (" + strInputRaceTime + ") to " + convertRace + ": " + comp_m_int + ":" + comp_m_s_s);
-        System.out.println();
-        System.out.println("=======================================================================");
+ System.out.println();
+ System.out.println("Converted Time from " + inputRaceDistance + " (" + strInputRaceTime + ") to " + convertRace + ": " + comp_m_int + ":" + comp_m_s_s);
+ System.out.println();
+ System.out.println("=======================================================================");
     }
 
     static void introPrompt() {
         System.out.println("========================================");
         System.out.println("\t\t\t\t******");
-        System.out.println("\t\t\t   PaceConv");
+        System.out.println("\t\t\tPaceConvert");
         System.out.println("\t\tWritten by: Austin Rippee");
         System.out.println("\t\t\t\t******");
         System.out.println("========================================");
