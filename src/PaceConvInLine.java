@@ -84,13 +84,9 @@ public class PaceConvInLine {
                 printInfo(strInputRaceTime, strInputRaceDistance, resultScore);
                 break;
             case "400m", "400":
-                if (dblTotalTime > 59.99) {
-                    System.out.println("Please enter 400m in seconds ONLY.");
-                } else {
-                    resultScore = 262.37121 * (400 / dblTotalTime) - 1402.7708;
-                    printInfo(strInputRaceTime, strInputRaceDistance, resultScore);
-                    break;
-                }
+                resultScore = 262.37121 * (400 / dblTotalTime) - 1402.7708;
+                printInfo(strInputRaceTime, strInputRaceDistance, resultScore);
+                break;
             case "600m", "600":
                 resultScore = 285.7637 * (600 / dblTotalTime) - 1371.563558;
                 printInfo(strInputRaceTime, strInputRaceDistance, resultScore);
@@ -196,10 +192,10 @@ public class PaceConvInLine {
 
     static void raceOutput(String inputRaceDistance, String strInputRaceTime, String convertRace, int comp_m_int, String comp_m_s_s) {
         System.out.println("=======================================================================");
- System.out.println();
- System.out.println("Converted Time from " + inputRaceDistance + " (" + strInputRaceTime + ") to " + convertRace + ": " + comp_m_int + ":" + comp_m_s_s);
- System.out.println();
- System.out.println("=======================================================================");
+        System.out.println();
+        System.out.println("Converted Time from " + inputRaceDistance + " (" + strInputRaceTime + ") to " + convertRace + ": " + comp_m_int + ":" + comp_m_s_s);
+        System.out.println();
+        System.out.println("=======================================================================");
     }
 
     static void introPrompt() {
